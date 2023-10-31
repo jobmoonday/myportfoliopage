@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --maintextcolor: rgb(36, 34, 34);
+    --borderAndBackgroundColor: #3bd9c4;
+    --sectionBorder: rgb(8, 104, 107);
+    
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  
+  
+  h1 { 
+    font-size: 40px;
+    background-color: var(--borderAndBackgroundColor);
+    color: var(--maintextcolor);
+    padding: 5px 10px 5px 60px;
+    margin: 10px;
+  }
+  
+  h2 {
+    font-size: 25px;
+    color: var(--maintextcolor);
+    text-align: center;
+    background-color: var(--borderAndBackgroundColor);
+    height: 50px;
+    width: 280px;
+    padding: 5px 10px 5px 10px;
+    
+         
+  }
+  
+  h3 {
+    font-size: 30px;
+    color: var(--maintextcolor);
+    border-right: 5px solid var(--sectionBorder);
+    height: fit-content;
+  }
+    
+  p {
+    padding: 0px 25px 0px 0px;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(1, 7, 7);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 10px 15px 10px 0;
+  }
+  
+  
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  
+  nav a{ 
+    color: aqua;
+    padding: 20px;
+    /* margin:  3px 20px 5px 5px; */
+    text-decoration: underline;
+    align-items: center;
+    justify-items: end;
+  }
+  
+  .hero-banner{
+    background-image: url(../images/02-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px; 
+    justify-content: right;
+    display: flex;
+    position: relative;
+    padding: 200px 20px 5px 10px;   
+  }
+  
+  
+  #aboutMeGrid {
+    margin: 10px 10px 10px 20px;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 10% 90%; */
+    grid-template-areas:
+    "aboutMeTag aboutMeParagraph";
+  }
+  
+    
+  #workGrid {
+    margin: 10px 10px 10px 20px;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-areas:
+    "workTag surfReport surfReport"
+    "workTag ledWall calculator"
+    "workTag pastelPuzzles runBuddy";
+  
+    
+  }
+  .workGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left;
+    align-items: end;
+    display: flex;
+    position: relative;
+  }
+  
+  #workTag {
+    height:auto;
+    align-items: flex-start;
+    justify-content: right;
+  }
+  
+  #surfReport {
+    grid-area: surfReport;
+    background-image: url("../images/02-portfolio-4.jpg");
+    justify-content:left;
+    border: 5px solid var(--borderAndBackgroundColor);
+    margin: 10px;
+  }
+  
+  #ledWall {
+    grid-area: ledWall;
+    background-image: url("../images/02-portfolio-1.jpg");
+    justify-content:left;
+    border: 5px solid var(--borderAndBackgroundColor);
+    margin: 10px;
+  }
+  
+  
+  #calculator {
+    grid-area: calculator;
+    background-image: url("../images/02-portfolio-2.jpg");
+    justify-content:left;
+    border: 5px solid var(--borderAndBackgroundColor);
+    margin: 10px;
+  }
+  
+  #pastelPuzzles {
+    grid-area: pastelPuzzles;
+    background-image: url("../images/02-portfolio-3.jpg");
+    justify-content:left;
+    border: 5px solid var(--borderAndBackgroundColor);
+    margin: 10px;
+  }
+  
+  #runBuddy {
+    grid-area: runBuddy;
+    background-image: url("../images/02-run-buddy.jpg");
+    justify-content:left;
+    border: 5px solid var(--borderAndBackgroundColor);
+    margin: 10px;
+  }
+  
+  .heading {
+    background-color: var(--borderAndBackgroundColor);
+    padding: 5px;
+    height: 50px;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+  }
+  
+   
+  h3{
+    color: darkcyan;
+    text-align: right;
+    padding-right: 10px;
+    line-height:normal;
+    
+  
+  }
+  
+  h4{
+    color: black;
+    text-align: left;
+    padding-right: 10px;
+    line-height:normal;
+    background-color: var(--borderAndBackgroundColor)  ;
+    
+  
+  }
+  
+  
+  p{
+    margin-left: 25px;
+    line-height: 20pt;
+    margin-bottom: 15px;
+    text-align: justify;
+    
+  }
+  
+  #contact-grid {
+    margin: 10px 10px 10px 20px;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 10% 90%; 
+    grid-template-areas:
+    "contactMeTag contactMeContent";
+  }
+  
+  .contactGridArea{
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left; 
+    align-items: end;
+    display: flex;
+    position: relative; 
+  
+  }
+  
+  #contactMeTag {
+    grid-area: contactMeTag;
+    background-image: none;
+    position:relative;
+    height:auto;
+    align-items: flex-start;
+    justify-content: right;
+    
+    
+  }
+  #contactMeContent {
+    grid-area: contactMeContent;
+    background-image: none;
+    align-items: center; 
+    justify-content: space-evenly;  
+    padding-top: 60px;
+   
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #header {
+      position: static;
+      margin: 20px;
+    }
+    #aboutMeGrid {
+      grid-template-rows: 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "aboutMeTag"
+      "aboutMeParagraph";
+    }
+    #workGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "workTag"
+          "surfReport"
+          "ledWall"
+          "calculator"
+          "pastelPuzzles"
+          "runBuddy";
+  }
+  
+  }
