@@ -149,6 +149,7 @@
   #surfReport {
     grid-area: surfReport;
     background-image: url("../images/02-portfolio-4.jpg");
+    cursor: pointer;
     justify-content:left;
     border: 5px solid var(--borderAndBackgroundColor);
     margin: 10px;
@@ -157,6 +158,7 @@
   #ledWall {
     grid-area: ledWall;
     background-image: url("../images/02-portfolio-1.jpg");
+    cursor: pointer;
     justify-content:left;
     border: 5px solid var(--borderAndBackgroundColor);
     margin: 10px;
@@ -166,6 +168,7 @@
   #calculator {
     grid-area: calculator;
     background-image: url("../images/02-portfolio-2.jpg");
+    cursor: pointer;
     justify-content:left;
     border: 5px solid var(--borderAndBackgroundColor);
     margin: 10px;
@@ -174,6 +177,7 @@
   #pastelPuzzles {
     grid-area: pastelPuzzles;
     background-image: url("../images/02-portfolio-3.jpg");
+    cursor: pointer;
     justify-content:left;
     border: 5px solid var(--borderAndBackgroundColor);
     margin: 10px;
@@ -182,6 +186,7 @@
   #runBuddy {
     grid-area: runBuddy;
     background-image: url("../images/02-run-buddy.jpg");
+    cursor: pointer;
     justify-content:left;
     border: 5px solid var(--borderAndBackgroundColor);
     margin: 10px;
